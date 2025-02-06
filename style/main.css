@@ -33,12 +33,39 @@ main {
   margin: 0 auto;
 }
 
-.invisible {
-  display: none;
+.active {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.active {
-  display: block;
+.middle {
+  display: flex;
+  direction: row;
+}
+
+.card {
+  padding: 50px;
+  padding-bottom: 0px;
+  padding-left: 5rem;
+}
+.card__heading {
+  padding-top: 20px;
+}
+.card__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding-top: 15px;
+}
+.card__label {
+  width: 100px;
+}
+
+.difference {
+  margin-top: 3rem;
+  margin-left: 5rem;
+  width: 100%;
 }
 
 .foot {

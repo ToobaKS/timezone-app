@@ -14,6 +14,10 @@ form.addEventListener("submit", async (e) => {
   let country = e.target.country.value.trim();
 
   let coordsArray = await coordinatesApi.getCoords(city, country);
+  if (coordsArray == "error") {
+    return;
+  }
+
   let lat = coordsArray[0].lat;
   let lon = coordsArray[0].lon;
 
@@ -51,13 +55,17 @@ function updatePage(timeObject, city, country, update) {
   let time = new Date(timeObject.formatted).toLocaleTimeString();
   let timezone = timeObject.abbreviation;
 
-  let location = Array.from(document.querySelector(update).children);
+  const section = document.querySelector(update);
 
-  location[2].textContent = city;
-  location[4].textContent = country;
-  location[6].textContent = date;
-  location[8].textContent = time;
-  location[10].textContent = timezone;
+  // Get all "output" elements inside "here"
+  const outputs = section.querySelectorAll(".card__output");
+
+  console.log(outputs);
+  outputs[0].textContent = city;
+  outputs[1].textContent = country;
+  outputs[2].textContent = date;
+  outputs[3].textContent = time;
+  outputs[4].textContent = timezone;
 }
 
 function difference(timestamp) {
@@ -70,9 +78,9 @@ function difference(timestamp) {
   console.log(currentDate);
 
   if (Math.sign(ms) < 0) {
-    temp = "ahead";
+    temp = "ahead of your location";
   } else {
-    temp = "behind";
+    temp = "behind you location";
   }
 
   let absolute = Math.abs(ms);

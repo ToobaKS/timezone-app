@@ -36,6 +36,7 @@
           name="city"
           type="text"
           placeholder="Enter City"
+          required
         />
         <label class="form__inputlabel" for="">Country</label>
         <input
@@ -43,39 +44,62 @@
           name="country"
           type="text"
           placeholder="Enter Country"
+          required
         />
         <button class="form__submit">Submit</button>
       </form>
       <div class="results invisible">
-        <section class="here">
-          <h2>Current City</h2>
-          <p class="label">City</p>
-          <p class="output"></p>
-          <p class="label">Country</p>
-          <p class="output"></p>
-          <p class="label">Date</p>
-          <p class="output"></p>
-          <p class="label">Time</p>
-          <p class="output"></p>
-          <p class="label">Time Zone</p>
-          <p class="output"></p>
-        </section>
-        <section class="other">
-          <h2>Chosen City</h2>
-          <p class="label">City</p>
-          <p class="output"></p>
-          <p class="label">Country</p>
-          <p class="output"></p>
-          <p class="label">Date</p>
-          <p class="output"></p>
-          <p class="label">Time</p>
-          <p class="output"></p>
-          <p class="label">Time Zone</p>
-          <p class="output"></p>
-        </section>
+        <div class="middle">
+          <section class="card here">
+            <h2 class="card__heading">Your Location</h2>
+            <div class="card__row">
+              <p class="card__label">City: </p>
+              <p class="card__output"></p>
+            </div>
+            <div class="card__row">
+              <p class="card__label">Country: </p>
+              <p class="card__output"></p>
+            </div>
+            <div class="card__row">
+              <p class="card__label">Date: </p>
+              <p class="card__output"></p>
+            </div>
+            <div class="card__row">
+              <p class="card__label">Time: </p>
+              <p class="card__output"></p>
+            </div>
+            <div class="card__row">
+              <p class="card__label">Time Zone: </p>
+              <p class="card__output"></p>
+            </div>
+          </section>
+          <section class="card other">
+            <h2 class="card__heading">Chosen Location</h2>
+            <div class="card__row">
+              <p class="card__label">City: </p>
+              <p class="card__output"></p>
+            </div>
+            <div class="card__row">
+              <p class="card__label">Country: </p>
+              <p class="card__output"></p>
+            </div>
+            <div class="card__row">
+              <p class="card__label">Date: </p>
+              <p class="card__output"></p>
+            </div>
+            <div class="card__row">
+              <p class="card__label">Time: </p>
+              <p class="card__output"></p>
+            </div>
+            <div class="card__row">
+              <p class="card__label">Time Zone: </p>
+              <p class="card__output"></p>
+            </div>
+          </section>
+        </div>
         <section class="difference">
           <h3 class="difference__heading">
-            Time defference between your location and your chosen location
+            Time difference between your location and your chosen location
           </h3>
           <h2 class="difference__time"></h2>
         </section>

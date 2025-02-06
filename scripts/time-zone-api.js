@@ -7,10 +7,10 @@ export class TimeZoneApi {
   async getTime(lat, lng) {
     try {
       const request = `${this.baseURL}?key=${this.apiKey}&format=json&by=position&lat=${lat}&lng=${lng}`;
-      const response = await axios.get(request);
+      const response = await axios.get(request);      
       return response.data;
     } catch (error) {
-      console.error(error);
+        console.error(error);
     }
   }
 }
