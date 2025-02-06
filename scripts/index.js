@@ -49,13 +49,13 @@ function difference(timestamp) {
   let months = days / 30;
 
   if (sec < 60) {
-    return `${Math.floor(sec)} seconds ${temp}`;
+    return `${Math.ceil(sec)} seconds ${temp}`;
   } else if (min < 60) {
-    return `${Math.floor(min)} minutes ${temp}`;
+    return `${Math.ceil(min)} minutes ${temp}`;
   } else if (hours < 24) {
-    return `${Math.floor(hours)} hours ${temp}`;
+    return `${Math.ceil(hours)} hours ${temp}`;
   } else if (days < 30) {
-    return `${Math.floor(days)} days ${temp}`;
+    return `${Math.ceil(days)} days ${temp}`;
   } else {
     return commentDate.toLocaleDateString();
   }
