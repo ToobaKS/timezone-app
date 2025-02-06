@@ -13,18 +13,22 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  padding-top: 2rem;
 }
 
 // ----------------------------------------- nav ------------------------------------------
 .nav {
   display: flex;
   background-color: #18365d;
+  height: calc(150px + 1rem);
 
   &__img {
     border-radius: 8px;
     height: 150px;
     margin: 0.5rem;
     margin-left: 0.5rem;
+    position: absolute;
   }
 
   &__title {
@@ -34,6 +38,30 @@ main {
     font-size: 4rem;
     font-weight: 400;
     margin: 0 auto;
+  }
+}
+// ----------------------------------- form ----------------------------------
+.form {
+  margin-top: 2rem;
+  margin-left: 3rem;
+
+  label {
+    font-size: 1.75rem;
+    margin-left: 2rem;
+  }
+
+  input {
+    font-size: 1.4575rem;
+    height: 2.1875rem;
+    margin-left: .125rem;
+  }
+
+  button {
+    height: 2.1875rem;
+        font-size: 1.4575rem;
+        width: 6.25rem;
+        margin-left: 1rem;
+
   }
 }
 

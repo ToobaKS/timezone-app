@@ -12,17 +12,20 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 2rem;
 }
 
 .nav {
   display: flex;
   background-color: #18365d;
+  height: calc(150px + 1rem);
 }
 .nav__img {
   border-radius: 8px;
   height: 150px;
   margin: 0.5rem;
   margin-left: 0.5rem;
+  position: absolute;
 }
 .nav__title {
   font-family: "Nunito Sans";
@@ -31,6 +34,26 @@ main {
   font-size: 4rem;
   font-weight: 400;
   margin: 0 auto;
+}
+
+.form {
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+.form label {
+  font-size: 1.75rem;
+  margin-left: 2rem;
+}
+.form input {
+  font-size: 1.4575rem;
+  height: 2.1875rem;
+  margin-left: 0.125rem;
+}
+.form button {
+  height: 2.1875rem;
+  font-size: 1.4575rem;
+  width: 6.25rem;
+  margin-left: 1rem;
 }
 
 .invisible {
