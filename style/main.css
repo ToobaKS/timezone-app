@@ -43,4 +43,28 @@ main {
 
 .foot {
   background-color: #686868;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0.5rem 3rem;
+}
+.foot__left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.foot__txt {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+.foot__txt p {
+  color: white;
+  font-size: 34px;
+  font-weight: 300;
+}
+.foot img {
+  height: 300px;
+  border-radius: 3px;
 }/*# sourceMappingURL=main.css.map */
