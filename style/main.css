@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", serif;
+}
+
+main {
+  width: 100%;
+  height: 850px;
+  background-image: url(../assets/ship_back_ground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  background-color: #18365d;
+}
+.nav__img {
+  border-radius: 8px;
+  height: 150px;
+  margin: 0.5rem;
+  margin-left: 0.5rem;
+}
+.nav__title {
+  font-family: "Nunito Sans";
+  color: white;
+  align-self: center;
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.foot {
+  background-color: #686868;
+}/*# sourceMappingURL=main.css.map */
