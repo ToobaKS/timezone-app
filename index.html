@@ -14,13 +14,17 @@
       rel="stylesheet"
     />
     <!-- Link CSS -->
-     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/main.css" />
     <title>Time Zone App</title>
   </head>
   <body>
     <header>
       <nav class="nav">
-        <img src="./assets/Hope, Guidance.jpg" alt="picture of a light house" class="nav__img">
+        <img
+          src="./assets/Hope, Guidance.jpg"
+          alt="picture of a light house"
+          class="nav__img"
+        />
         <h2 class="nav__title">Time Zone API</h2>
       </nav>
     </header>
@@ -42,39 +46,41 @@
         />
         <button class="form__submit">Submit</button>
       </form>
-      <section class="here">
-        <h2>Current City</h2>
-        <p class="label">City</p>
-        <p class="output"></p>
-        <p class="label">Country</p>
-        <p class="output"></p>
-        <p class="label">Date</p>
-        <p class="output"></p>
-        <p class="label">Time</p>
-        <p class="output"></p>
-        <p class="label">Time Zone</p>
-        <p class="output"></p>
-      </section>
-      <section class="other">
-        <h2>Chosen City</h2>
-        <p class="label">City</p>
-        <p class="output"></p>
-        <p class="label">Country</p>
-        <p class="output"></p>
-        <p class="label">Date</p>
-        <p class="output"></p>
-        <p class="label">Time</p>
-        <p class="output"></p>
-        <p class="label">Time Zone</p>
-        <p class="output"></p>
-      </section>
-      <section class="difference">
-        <h3 class="difference__heading">Time defference between your location and your chosen location</h3>
-        <h2 class="difference__time"></h2>
-      </section>
+      <div class="results invisible">
+        <section class="here">
+          <h2>Current City</h2>
+          <p class="label">City</p>
+          <p class="output"></p>
+          <p class="label">Country</p>
+          <p class="output"></p>
+          <p class="label">Date</p>
+          <p class="output"></p>
+          <p class="label">Time</p>
+          <p class="output"></p>
+          <p class="label">Time Zone</p>
+          <p class="output"></p>
+        </section>
+        <section class="other">
+          <h2>Chosen City</h2>
+          <p class="label">City</p>
+          <p class="output"></p>
+          <p class="label">Country</p>
+          <p class="output"></p>
+          <p class="label">Date</p>
+          <p class="output"></p>
+          <p class="label">Time</p>
+          <p class="output"></p>
+          <p class="label">Time Zone</p>
+          <p class="output"></p>
+        </section>
+        <section class="difference">
+          <h3 class="difference__heading">
+            Time defference between your location and your chosen location
+          </h3>
+          <h2 class="difference__time"></h2>
+        </section>
+      </div>
     </main>
-    <footer class="foot">
-      
-    </footer>
+    <footer class="foot"></footer>
   </body>
 </html>

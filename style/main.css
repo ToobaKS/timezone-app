@@ -33,6 +33,14 @@ main {
   margin: 0 auto;
 }
 
+.invisible {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
 .foot {
   background-color: #686868;
 }/*# sourceMappingURL=main.css.map */

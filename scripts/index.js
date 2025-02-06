@@ -26,6 +26,9 @@ form.addEventListener("submit", async (e) => {
   let hourDifference = difference(new Date(timeObject.formatted).getTime());
   let differenceElement = document.querySelector(".difference__time");
   differenceElement.textContent = hourDifference;
+
+  let results = document.querySelector(".results");
+  results.classList.add("active");
 });
 
 async function getCurrent() {
