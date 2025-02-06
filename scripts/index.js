@@ -49,6 +49,7 @@ function updatePage(timeObject, city, country, update) {
   let timezone = timeObject.abbreviation;
 
   let location = Array.from(document.querySelector(update).children);
+
   location[2].textContent = city;
   location[4].textContent = country;
   location[6].textContent = date;
