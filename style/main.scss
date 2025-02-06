@@ -13,7 +13,6 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   padding-top: 2rem;
 }
 
@@ -39,7 +38,7 @@ main {
     font-weight: 400;
     margin: 0 auto;
   }
-}
+
 // ----------------------------------- form ----------------------------------
 .form {
   margin-top: 2rem;
@@ -58,9 +57,9 @@ main {
 
   button {
     height: 2.1875rem;
-        font-size: 1.4575rem;
-        width: 6.25rem;
-        margin-left: 1rem;
+    font-size: 1.4575rem;
+    width: 6.25rem;
+    margin-left: 1rem;
 
   }
 }
@@ -71,7 +70,44 @@ main {
 }
 
 .active {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.middle {
+  display: flex;
+  direction: row;
+
+}
+
+.card {
+    padding: 50px;
+    padding-bottom: 0px;
+    padding-left: 5rem;
+  
+  &__heading {
+    padding-top: 20px;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-top: 15px;
+    
+  }
+
+  &__label {
+    width: 100px;
+    //margin-right: 20px;
+  }
+}
+
+.difference{
+    margin-top: 3rem;
+    margin-left: 5rem;
+    width: 100%;
 }
 
 // ---------------------------------------- foot ---------------------------------------------------------
